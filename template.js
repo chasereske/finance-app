@@ -3,7 +3,7 @@ export default () => {
         <html lang="eng">
             <head>
                 <meta charset="utf-8">
-                <title>MERN Kickstart</title>
+                <title>Finance App</title>
             </head>
             <body>
                 <div id="root"></div>
