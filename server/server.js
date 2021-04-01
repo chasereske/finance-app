@@ -24,7 +24,7 @@ app.listen(port, function onStart (err) {
 })
 
 const url = process.env.MONGODB_URI || 'mongodb://localhost:27017/finance-app';
-MongoClient.connect(url, (err, db) => {
+MongoClient.connect(url, { useNewURLParser: true, useUnifiedTopology: true },(err, db) => {
     console.log("Connected successfully to mongodb server");
-    db.close();
+    //db.close();
 })
