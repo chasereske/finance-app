@@ -4,7 +4,7 @@ const config = {
     jwtSecret: process.env.JWT_SECRET || "YOU_secret_key",
     mongoURI: process.env.MONGODB_URI ||
         process.env.MONGO_HOST ||
-        'mongodb://' + (process.env.IP || 'localhost') + ':' + (process.env.MONGO_PORT || '27017') + '/mernproject'
+        "mongodb+srv://chase123:IamInnovation33!!@cluster0.jxwul.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
 }
 
 export default config; 
