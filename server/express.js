@@ -18,7 +18,14 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(cookieParser());
 app.use(compress());
-app.use(helmet());
+app.use(helmet({
+    contentSecurityPolicy: {
+        directives: {
+          ...helmet.contentSecurityPolicy.getDefaultDirectives(),
+          "script-src": ["'self'", "'unsafe-inline'", "'unsafe-eval'"],
+        },
+    },
+}));
 app.use(cors());
 app.use('/dist', express.static(path.join(CURRENT_WORKING_DIR, 'dist')));
 
