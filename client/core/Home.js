@@ -4,7 +4,7 @@ import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
-import unicornbikeImg from './../assets/images/unicornbike.jpg';
+import financeImg from './../assets/images/finance.jpg';
 import { Link } from 'react-router-dom';
 import auth from '../auth/auth-helper';
 import ExpenseOverview from './../expense/ExpenseOverview';
@@ -46,8 +46,8 @@ const useStyles = makeStyles(theme => ({
                 <Typography variant="h6" className={classes.title}>
                   Home Page
                 </Typography>
-                <CardMedia className={classes.media} image={unicornbikeImg} title="Unicorn Bicycle"/>
-                <Typography variant="body2" component="p" className={classes.credit} color="textSecondary">Photo by <a href="https://unsplash.com/@anniespratt" target="_blank" rel="noopener noreferrer">Annie Spratt</a> on Unsplash</Typography>
+                <CardMedia className={classes.media} image={financeImg} title="Finance Picture"/>
+                <Typography variant="body2" component="p" className={classes.credit} color="textSecondary">Just think of everything you could do and everywhere you could go if you budgeted and invested your time wisely! </Typography>
                 <CardContent>
                   <Typography variant="body1" component="p">
                     Welcome to the Finance App Home Page. <Link to='/signup'>Sign up</Link> or <Link to='/signin'>sign in</Link> to get started.

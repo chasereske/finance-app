@@ -25,7 +25,7 @@ const Menu = withRouter(({history}) => (
   <AppBar position="static">
     <Toolbar>
       <Typography variant="h6" color="inherit">
-        Finance Tracker App
+        Finance App
       </Typography>
       <div>
         <Link to="/">
